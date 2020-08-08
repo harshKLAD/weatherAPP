@@ -3,17 +3,75 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/assets/style.css" />
     <title>Document</title>
   </head>
-  <body>
-    <h1>Weather App</h1>
-    <div>
-      <h2>Select City</h2>
-
-      <input type="text" id="city_in" />
-      <button id="city_submit">Submit</button>
+  <body class="bg-light">
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+      <div class="container">
+        <a class="navbar-brand m-auto" href="#">
+          <h1 class="display-4 d-inline p-2">snowi</h1>
+          <i class="fas fa-snowflake fa-2x fa-spin"></i>
+        </a>
+      </div>
+    </nav>
+    <div class="container" id="main-div">
+      <div class="mx-auto mt-3" id="sub-div">
+        <form action="" class="form-group">
+          <label class="d-block text-center h5" for="formGroupExampleInput"
+            >Please Enter City Below</label
+          >
+          <div class="input-group d-flex justify-content-center">
+            <input
+              type="text"
+              class="rounded-left border mt-2 pl-2 d-inline"
+              id="city_in"
+              placeholder="Enter City"
+            />
+            <div class="input-group-append d-inline">
+              <button
+                type="button"
+                class="btn btn-primary btn-lg mt-2 rounded-right"
+                id="city_submit"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div id="disp_data" class="d-flex justify-content-center"></div>
     </div>
-    <div id="disp_data"></div>
-    <script src="/api.js"></script>
+    <footer class="text-center fixed-bottom">
+      <p>harshk-LAD | &copy 2020 | All Rights Reserved</p>
+    </footer>
+    <script src="/assets/api.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
