@@ -9,7 +9,7 @@ function citySubmit(e) {
 
   async function getTemp(city) {
     const response = await fetch(
-      `http://api.weatherstack.com/current?access_key=5f3e72770d7b24e50a3e83f0e1a9a6d6&query=${city}`,
+      `https://api.weatherstack.com/current?access_key=5f3e72770d7b24e50a3e83f0e1a9a6d6&query=${city}`,
       {}
     );
     const json = await response.json();
